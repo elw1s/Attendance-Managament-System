@@ -33,5 +33,63 @@ public class Course {
 
     }
 
+    public Long getId() {
+        return course_id;
+    }
 
+    public void setId(Long course_id) {
+        this.course_id = course_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
+    }
+
+    public Integer getNum_student() {
+        return num_student;
+    }
+
+    public void setNum_student(Integer num_student) {
+        this.num_student = num_student;
+    }
+
+    public List<Student> getStudentList() {
+        return studentList;
+    }
+
+    public void setStudentList(List<Student> studentList) {
+        this.studentList = studentList;
+    }
+
+    public List<Teacher> getTeacherList() {
+        return teacherList;
+    }
+
+    public void setTeacherList(List<Teacher> teacherList) {
+        this.teacherList = teacherList;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "course_id=" + course_id +
+                ", name='" + name + '\'' +
+                ", capacity=" + capacity +
+                ", num_student=" + num_student +
+                ", studentList=" + studentList +
+                ", teacherList=" + teacherList +
+                '}';
+    }
 }
